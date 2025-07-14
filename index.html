@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/icons/favicon-32x32.png" />
+    <title>TokoBit</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#Beranda">
+          <img src="image/logo-bibit.png" alt="logo rizkiardi" width="40" />
+          Toko<span class="warna-hijau">Bit</span>
+        </a>
+      </div>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#">
+              <img src="icons/xmark-solid.svg" alt="" />
+            </a>
+          </li>
+          <li onclick="hideSidebar()">
+            <a href="#Beranda">Beranda</a>
+          </li>
+          <li onclick="hideSidebar()">
+            <a href="#Belanja">Belanja</a>
+          </li>
+          <li onclick="hideSidebar()">
+            <a href="#Terbaru">Terbaru</a>
+          </li>
+          <li onclick="hideSidebar()">
+            <a href="#Tentang"
+              >Tentang Toko<span class="warna-hijau">Bit</span></a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li class="hide-mobile">
+            <a href="#Beranda">Beranda</a>
+          </li>
+          <li class="hide-mobile">
+            <a href="#Belanja">Belanja</a>
+          </li>
+          <li class="hide-mobile">
+            <a href="#Terbaru">Terbaru</a>
+          </li>
+          <li class="hide-mobile">
+            <a href="#Tentang"
+              >Tentang Toko<span class="warna-hijau">Bit</span></a
+            >
+          </li>
+          <li onclick="showSidebar()" class="menu-button">
+            <a href="#">
+              <img src="icons/bars-solid.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="Beranda">
+      <section class="section-main">
+        <div class="homepage">
+          <section>
+            <article>
+              <h1>Toko<span class="warna-hijau">Bit</span></h1>
+              <p>Merupakan Toko Bibit, menjual berbagai jenis tanaman.</p>
+              <p>
+                Tersedia berbagai bibit buah, tanaman hias dsb.
+                <br />
+                <span
+                  >Belanja bibit lebih
+                  <span class="font-tebal">"Mudah"</span> diantar sampai</span
+                >
+                <span class="font-tebal">"Rumah"</span>
+                <br />belanja sekarang.
+                <button>
+                  <a href="#">Beli bibit</a>
+                </button>
+              </p>
+            </article>
+          </section>
+          <div class="gambar">
+            <img src="image/strawberry.jpg" alt="" width="500" />
+          </div>
+        </div>
+
+        <section class="belanja" id="Belanja">
+          <h2>Belanja yuk</h2>
+          <div class="content">
+            <div class="card">
+              <img
+                class="card-gambar"
+                src="image/tomato.jpg"
+                alt=""
+                height="150px"
+              />
+              <p>Bibit tanaman Tomat</p>
+              <a href=""
+                ><span class="font-kecil">Lihat selengkapnya..</span></a
+              >
+              <p class="harga">Rp. 123</p>
+
+              <button>Beli</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-gambar"
+                src="image/cabai.jpg"
+                alt=""
+                height="150px"
+              />
+              <p>Bibit Cabai</p>
+              <a href=""
+                ><span class="font-kecil">Lihat selengkapnya..</span></a
+              >
+              <p class="harga">Rp. 123</p>
+
+              <button>Beli</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-gambar"
+                src="image/strawberry.jpg"
+                alt=""
+                height="150px"
+              />
+              <p>Bibit tanaman Strawberry</p>
+              <a href=""
+                ><span class="font-kecil">Lihat selengkapnya..</span></a
+              >
+              <p class="harga">Rp. 123</p>
+
+              <button>Beli</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-gambar"
+                src="image/alpukat.jpg"
+                alt=""
+                height="150px"
+              />
+              <p>Bibit tanaman Alpukat</p>
+              <a href=""
+                ><span class="font-kecil">Lihat selengkapnya..</span></a
+              >
+              <p class="harga">Rp. 123</p>
+
+              <button>Beli</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="belanja" id="Terbaru">
+          <h2 class="terbaru">Tanaman terbaru</h2>
+          <div class="content">
+            <div class="card">
+              <img
+                class="card-gambar"
+                src="image/pucuk merah.jpg"
+                alt=""
+                height="150px"
+              />
+              <p>Bibit tanaman Pucuk Merah</p>
+              <a href=""
+                ><span class="font-kecil">Lihat selengkapnya..</span></a
+              >
+              <p class="harga">Rp. 123</p>
+
+              <button>Beli</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-gambar"
+                src="image/durian.jpg"
+                alt=""
+                height="150px"
+              />
+              <p>Bibit tanaman Durian</p>
+              <a href=""
+                ><span class="font-kecil">Lihat selengkapnya..</span></a
+              >
+              <p class="harga">Rp. 123</p>
+
+              <button>Beli</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <aside>
+        <div class="aside-main">
+          <article>
+            <div class="aside-tentang">
+              <h2 id="Tentang">
+                Tentang <span>Toko</span><span class="warna-hijau">Bit</span>
+              </h2>
+
+              <p>
+                Merupakan Toko Bibit, toko ini menjual berbagai jenis tanaman.
+              </p>
+              <p>
+                Tersedia berbagai bibit buah, tanaman hias dsb.
+                <br />
+                <span
+                  >Belanja bibit lebih
+                  <span class="font-tebal">"Mudah"</span> diantar sampai</span
+                >
+                <span class="font-tebal">"Rumah"</span>
+              </p>
+
+              <h2 class="founder">Founder</h2>
+              <p>
+                Rizki Ardi adalah Freshgaduate dari "Universitas Muhammadiyah
+                Purworejo", Program Studi Teknologi Informasi, dengan IPK 3.49
+              </p>
+            </div>
+            <div class="aside-card">
+              <img src="image/IMG_9833 - Copy.JPG" alt="" height="250px" />
+              <p class="aside-nama">Rizki Ardi</p>
+            </div>
+          </article>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="footer-atas">
+        <div class="footer-left">
+          <p><span>Toko</span><span class="warna-hijau">Bit</span></p>
+        </div>
+
+        <div class="footer-center">
+          <p class="font-bold">Hubungi</p>
+          <p>Whatsapp 08123456789</p>
+        </div>
+
+        <div class="footer-right">
+          <p class="font-bold">Alamat</p>
+          <p>Desa Rejowinangun, Kemiri, Purworejo</p>
+          <p class="footer-alamat">Jawa Tengah 54262- Indonesia</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bawah">
+        <p>Copyright &COPY; RizkiArdi | 2025</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
