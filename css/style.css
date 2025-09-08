@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +33,7 @@ header .logo img {
 
 header .logo a {
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -70,7 +69,7 @@ header nav .sidebar li {
 header nav .sidebar li a {
   width: 100%;
 }
-/*  */
+/* toggle menu navbar */
 
 header nav ul {
   display: flex;
@@ -82,6 +81,7 @@ header nav li a {
   margin-right: 5px;
   color: #000;
   margin-right: 20px;
+  font-size: 15px;
 }
 
 header nav a .warna-hijau {
@@ -98,6 +98,7 @@ body {
   margin: auto;
   height: 100vh;
   position: relative;
+  font-size: 16px;
 }
 
 main .homepage {
@@ -108,8 +109,18 @@ main .homepage {
   margin: auto;
 }
 
+main .section-main .homepage {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main .section-main .homepage section article p {
+  font-size: 16px;
+}
+
 main .section-main .belanja {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,14 +133,14 @@ main .terbaru {
 }
 
 main .content {
-  width: 90%;
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  /* background-color: yellowgreen; */
 }
 
 main .content .card-gambar {
@@ -189,10 +200,14 @@ main .homepage h1 .warna-hijau {
   text-decoration: none;
 }
 
-main section h1,
-h2 {
+main section h1 {
   font-weight: normal;
-  font-size: 50px;
+  font-size: 40px;
+}
+
+main section h2 {
+  font-size: 30px;
+  font-weight: normal;
 }
 
 main .homepage .font-tebal {
@@ -201,7 +216,7 @@ main .homepage .font-tebal {
 
 main .homepage p {
   line-height: 2em;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 main .homepage .warna-hijau {
@@ -256,12 +271,26 @@ main aside .aside-main article {
   padding-bottom: 20px;
 }
 
-main .aside-main .aside-tentang .warna-hijau {
+main .aside-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main aside .aside-main article h2.founder {
+  margin-top: 30px;
+}
+
+.warna-hijau {
   color: #2ec210;
 }
 
 main .aside-main h2 {
   display: block;
+  font-weight: normal;
+}
+
+main .aside-main p {
+  font-size: 16px;
 }
 
 main aside .aside-nama {
@@ -275,7 +304,6 @@ main aside img {
   box-shadow: 0px 1px 1px 2px #fff;
   margin-top: -10px;
   margin-bottom: -10px;
-  /* padding: 20px; */
 }
 
 footer {
@@ -283,7 +311,9 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 30px;
+  max-width: 1200px;
+  font-size: 15px;
+  margin: 0 auto;
 }
 
 footer .footer-atas {
@@ -331,6 +361,12 @@ footer .font-bold {
       rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   }
 
+  main .section-main .homepage {
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   main aside .aside-main article {
     display: flex;
     justify-content: space-between;
@@ -346,6 +382,13 @@ footer .font-bold {
     font-size: 75%;
   }
 
+  main .section-main .homepage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   main .section-main .belanja-terbaru {
     width: 200px;
     height: 285px;
@@ -353,8 +396,6 @@ footer .font-bold {
     border-radius: 10px;
     text-align: center;
     margin: auto;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-      rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   }
 
   main aside .aside-main article {
@@ -381,7 +422,7 @@ footer .font-bold {
   }
 
   main .section-main .belanja h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   main .section-main .gambar {
@@ -391,13 +432,11 @@ footer .font-bold {
 
   main .section-main .belanja .content .card {
     width: 200px;
-    height: 285px;
+    height: auto;
+    padding-bottom: 20px;
     background-color: #f5f5f7;
     border-radius: 10px;
     text-align: center;
-    margin: 30px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-      rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   }
 
   main .section-main .belanja .content .card .card-gambar {
@@ -457,18 +496,30 @@ footer .font-bold {
   }
 
   main .section-main .homepage section {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: -50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 30px;
   }
 
-  main .section-main .gambar {
-    margin-top: 30px;
-    margin-bottom: -70px;
+  main .section-main .belanja h2 {
+    margin-top: 50px;
+  }
+
+  main .section-main .belanja .content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 0;
+  }
+
+  main .section-main .gambar img {
+    width: 400px;
+    margin-left: -120px;
+    margin-top: 50px;
   }
 
   main .section-main .homepage section p {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   main .section-main .belanja-terbaru {
@@ -478,16 +529,20 @@ footer .font-bold {
     border-radius: 10px;
     text-align: center;
     margin: 30px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-      rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   }
 
-  main .section-main .belanja-terbaru .content .card img {
+  main .section-main .belanja .content .card {
+    width: 200px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  main .section-main .belanja .content .card img {
     width: 200px;
   }
 
   main .section-main .belanja h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   main .section-main section h2 {
@@ -496,22 +551,26 @@ footer .font-bold {
   }
 
   main aside h2 {
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 20px;
   }
 
   main aside .aside-main article {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0;
+    margin-left: 25px;
   }
 
-  main aside .aside-main article .aside-tentang {
-    margin-top: 30px;
+  main aside .aside-main article .aside-tentang h2#Tentang {
+    font-size: 30px;
+    margin-left: 0;
   }
 
   main aside .aside-main article .founder {
     margin-top: 20px;
+    font-size: 30px;
+    margin-left: 0;
   }
 
   main aside .aside-card {
@@ -530,11 +589,24 @@ footer .font-bold {
   }
 
   header nav {
-    margin-right: 5%;
+    margin-right: 20px;
   }
 
   header nav .hide-mobile {
     display: none;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  footer .footer-left {
+    margin-right: 20px;
+    margin-left: 25px;
+  }
+
+  footer .footer-right {
+    margin-right: 20px;
   }
 }
 
@@ -542,4 +614,24 @@ footer .font-bold {
   header nav .menu-button {
     display: none;
   }
+}
+
+/* scroolbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dddddd;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a4a8b1;
 }
