@@ -4,11 +4,13 @@ TokoBit merupakan website sederhana yang membantu Petani menjual Tanaman Hias da
 
 🔗 Live Website: https://tokobit.vercel.app
 
-Tampilan Screenshot di Laptop
+### Tampilan Laptop
+
 ![Homepage](./screnshoots/TokoBit-laptop.webp)
 
-Tampilan Screenshot di Mobile Handphone
-![Homepage](./screnshoots/TokoBit-mobile.webp)
+### Tampilan Mobile
+
+<img src="./screnshoots/TokoBit-mobile.webp" width="200"/>
 
 ## 🛠 Tech Stack
 
