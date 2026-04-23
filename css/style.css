@@ -43,6 +43,14 @@ header .logo .warna-hijau {
   color: #2ec210;
 }
 
+nav {
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* toggle menu navbar */
 header nav .sidebar {
   position: fixed;
@@ -110,7 +118,7 @@ main .homepage {
 }
 
 main .section-main .homepage {
-  width: 100%;
+  width: 95%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -319,6 +327,8 @@ footer {
 footer .footer-atas {
   display: flex;
   justify-content: space-around;
+  width: 95%;
+  margin: 0 auto;
 }
 
 footer .footer-bawah p {
@@ -357,8 +367,10 @@ footer .font-bold {
     border-radius: 10px;
     text-align: center;
     margin: auto;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-      rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    box-shadow:
+      rgba(17, 17, 26, 0.1) 0px 8px 24px,
+      rgba(17, 17, 26, 0.1) 0px 16px 56px,
+      rgba(17, 17, 26, 0.1) 0px 24px 80px;
   }
 
   main .section-main .homepage {
@@ -508,8 +520,8 @@ footer .font-bold {
   main .section-main .belanja .content {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    margin: 0;
+    width: 450px;
+    margin: 0px;
   }
 
   main .section-main .gambar img {
@@ -580,8 +592,9 @@ footer .font-bold {
 
   main aside .aside-card img {
     border-radius: 50%;
+    height: 150px;
     box-shadow: 0px 1px 1px 2px #fff;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   header {
